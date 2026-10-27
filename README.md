@@ -24,7 +24,20 @@ This framework integrates:
 * **Unsupervised Generative BiLSTM-VAEs** trained strictly on normal homeostatic physiology to detect rare anomalies via reconstruction error spikes.
 * **177-Dimensional Late Fusion Network** with dynamic **Soft-Attention Modality Gating** to give bedside intensivists transparent reasoning for every alert.
 * **AutoGen Multi-Agent Governance** and a **Multimodal LLM QA Cross-Check** to prevent AI hallucinations and generate physician-grade bedside handoff notes.
-* **Real-Time Streamlit Telemetry Dashboard** for interactive bedside monitoring.
+* **Real-Time Streamlit Telemetry Dashboard** with Multi-Bed Ward Matrix, What-If Counterfactual Simulator, ECG Fiducial annotations, and Ask CardioBot Clinical AI.
+
+### Advanced Clinical Bedside Features (Pillars 1 to 3)
+1. **ICU Central Ward Matrix (Pillar 1):** Central nursing station telemetry overview displaying 4 active ICU beds with live vitals, rhythm indicators, and automated triage badges (`STABLE`, `ELEVATED WATCH`, `CRITICAL STAT`).
+2. **"What-If" Counterfactual Intervention Simulator (Pillar 1):** Real-time therapeutic simulation (Supplemental $O_2$ titration, IV Metoprolol, IV Norepinephrine, and IV Amiodarone) quantifying Absolute Risk Reduction (ARR) and dynamic attention weight rebalancing.
+3. **Dual Vitals Forecast with Clinical Danger Bands (Pillar 1):** Shaded physiological danger zones on continuous 24h observed and 6h BiLSTM projected trajectories (Hypoxia $<90\%$, Tachycardia $>100$ bpm, Bradycardia $<60$ bpm).
+4. **Lead-II ECG Fiducial Markers & Morphology (Pillar 2):** Automated R-peak detection, QRS complex duration in milliseconds (differentiating narrow sinus vs. wide-complex ventricular ectopy $>120$ ms), and ST-segment displacement.
+5. **Epistemic Uncertainty via Monte Carlo Dropout (Pillar 2):** Bayesian posterior uncertainty sampling ($P \pm \sigma$) providing 90% credible intervals and confidence tiers (`High`, `Moderate`, `Borderline`).
+6. **Top-3 Biomarker Drivers Attribution (Pillar 2):** Input gradient sensitivity computing the highest contributing demographic and lab parameters.
+7. **Official SBAR Clinical Handoff Note (Pillar 3):** Standardized hospital handoff note (*Situation, Background, Assessment, Recommendation*) with 1-click file download.
+8. **Interactive "Ask CardioBot" Bedside Clinical AI (Pillar 3):** Conversational AI co-pilot answering clinical questions regarding patient risk drivers, ACLS protocols, and medication safety.
+9. **Drug-Vital Safety & Contraindication Screening (Pillar 3):** Automated rule-based checks flagging drug cautions (e.g. holding beta-blockers during bradycardia or holding vasodilators during hypotension).
+10. **Batch Patient CSV Triage Ingestion & Leaderboard:** Screen entire hospital cohorts via CSV drag-and-drop with automated multi-modal risk calculation, triage sorting, and exportable leaderboard.
+11. **Clinical Model Card & SaMD Ethical Governance:** Full regulatory transparency compliant with Stanford AIMI, Google Health, and FDA Software as a Medical Device (SaMD) investigational standards.
 
 ---
 
@@ -231,8 +244,8 @@ Cardiac_Risk_Prediction/
 
 ### Step 1: Clone the Repository & Install Dependencies
 ```bash
-git clone https://github.com/AdiRatnam/Cardiac_Risk_Prediction.git
-cd Cardiac_Risk_Prediction
+git clone https://github.com/Anubhav225/cardiac_risk_prediction.git
+cd cardiac_risk_prediction
 pip install -r requirements.txt
 ```
 
@@ -267,7 +280,9 @@ Open any notebook in `notebooks/` (e.g. `Week6_Fusion.ipynb` or `Week7_AutoML_Au
 
 ---
 
-## 9. Contributors & License
+## 9. Author & License
 
-Developed as part of the **Advanced Multi-Modal Deep Learning & Clinical AI Curriculum**.  
-Licensed under the [MIT License](LICENSE).
+* **Lead Architect & Developer:** [Anubhav Das](https://github.com/Anubhav225) (`@Anubhav225`)
+* **Project:** Multi-Modal Deep Learning Framework for Real-Time Cardiac Risk Prediction in ICU
+* **Curriculum Status:** Weeks 1 through 7 Complete, Verified & Benchmarked
+* **License:** Licensed under the [MIT License](LICENSE).

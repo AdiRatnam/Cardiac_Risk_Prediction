@@ -3,34 +3,37 @@ AUTOGEN MULTI-AGENT CLINICAL DECISION SUPPORT ORCHESTRATION LOG
 
 [CASE 1: STABLE ICU PATIENT]
 ======================================================================
-          ICU CLINICAL DECISION SUPPORT: MULTI-AGENT HANDOFF NOTE      
+       ICU CLINICAL DECISION SUPPORT: OFFICIAL SBAR HANDOFF NOTE      
 ======================================================================
 
-1. PATIENT STATUS & RISK STRATIFICATION:
-   - Predicted Acute Cardiac Deterioration Risk: 88.1%
-   - Triage Category: [CRITICAL / HIGH RISK]
-   - Pipeline Status: VALIDATED
+[S - SITUATION]
+   - Monitoring Station     : Bed 309 | Acute Telemetry Feed
+   - Predicted Cardiac Risk : 0.9% (±1.1%) | Triage: [LOW RISK]
+   - 90% Credible Interval  : [0.0% - 2.9%] (High Model Confidence)
+   - Telemetry Ingestion    : VALIDATED (Zero packet dropout)
 
-2. MODALITY EXPLAINABILITY (ATTENTION DRIVERS):
-   - Primary Risk Driver     : VAE Anomaly Latent (37.5%)
-   - ECG Morphology Weight   : 34.2%
-   - Longitudinal Vitals     : 17.1%
-   - VAE Anomaly Score       : 37.5% (Recon Error: 0.03)
-   - Baseline Health History : 11.1%
+[B - BACKGROUND]
+   - Patient Demographics   : Age 45y | SBP: 116 mmHg | Chol: 178 mg/dL
+   - Current Bedside Vitals : HR 70 bpm | SpO2 97.7%
+   - Lead-II ECG Morphology : Normal Sinus Rhythm (QRS: 85ms, ST: +0.19mV)
+   - Generative VAE Anomaly : Reconstruction Error = 0.06
 
-3. MULTIMODAL LLM SECOND OPINION & QA CROSS-CHECK:
-   - LLM Diagnostic Read     : HIGH RISK
-   - QA Concordance Status   : [PASSED] CONCORDANT: DL Model (88.1%) aligns with LLM assessment (HIGH).
-   - Clinical Reasoning      : Marked tachycardia/hypoxia and elevated cardiac neural risk probability observed.
+[A - ASSESSMENT]
+   - Primary Risk Driver    : Vitals Trend (53.2% gating weight)
+   - Modality Breakdown     : ECG 15.9% | Vitals 53.2% | VAE 22.3% | History 8.6%
+   - Top Clinical Biomarkers: Chest Pain Type (24.5%), Sex (19.0%), Fluoroscopy Vessels (15.7%)
+   - LLM Second Opinion QA  : LOW RISK [CONCORDANT]
+   - QA Clinical Rationale  : Vital trajectories stable within physiological limits; normal sinus rhythm profile.
 
-4. RECOMMENDED CLINICAL INTERVENTIONS:
-   [ACTION REQUIRED] Immediate bedside assessment by ICU intensivist.
-   - Obtain STAT 12-lead ECG and serum Troponin / Cardiac Biomarkers.
-   - Verify arterial line blood pressure and oxygen delivery titration.
-   - Prepare antiarrhythmic / vasopressor support as clinically indicated.
+[R - RECOMMENDATION & BEDSIDE ORDERS]
+   [ROUTINE PROTOCOL - HEMODYNAMICALLY STABLE]
+   1. Continue standard ICU telemetry monitoring protocol (q1h vitals logging).
+   2. Maintain current maintenance IV fluids and supportive care.
+   3. Patient parameters comfortably within homeostatic boundaries.
 
 ======================================================================
-Report generated autonomously by AutoGen Clinical Multi-Agent Workflow.
+Attestation: AutoGen Clinical Multi-Agent Framework | CardioSense AI
+Attending Co-Pilot ID: MD-ICU-8821 | Verified at: 2026-10-27 22:02:17 UTC
 ======================================================================
 
 
@@ -38,32 +41,39 @@ Report generated autonomously by AutoGen Clinical Multi-Agent Workflow.
 
 [CASE 2: ACUTE CRITICAL CARDIAC DETERIORATION]
 ======================================================================
-          ICU CLINICAL DECISION SUPPORT: MULTI-AGENT HANDOFF NOTE      
+       ICU CLINICAL DECISION SUPPORT: OFFICIAL SBAR HANDOFF NOTE      
 ======================================================================
 
-1. PATIENT STATUS & RISK STRATIFICATION:
-   - Predicted Acute Cardiac Deterioration Risk: 99.2%
-   - Triage Category: [CRITICAL / HIGH RISK]
-   - Pipeline Status: VALIDATED
+[S - SITUATION]
+   - Monitoring Station     : Bed 309 | Acute Telemetry Feed
+   - Predicted Cardiac Risk : 0.7% (±16.2%) | Triage: [LOW RISK]
+   - 90% Credible Interval  : [0.0% - 32.4%] (Borderline / Elevated Uncertainty)
+   - Telemetry Ingestion    : VALIDATED (Zero packet dropout)
 
-2. MODALITY EXPLAINABILITY (ATTENTION DRIVERS):
-   - Primary Risk Driver     : VAE Anomaly Latent (34.7%)
-   - ECG Morphology Weight   : 23.5%
-   - Longitudinal Vitals     : 34.5%
-   - VAE Anomaly Score       : 34.7% (Recon Error: 6.87)
-   - Baseline Health History : 7.3%
+[B - BACKGROUND]
+   - Patient Demographics   : Age 72y | SBP: 175 mmHg | Chol: 280 mg/dL
+   - Current Bedside Vitals : HR 132 bpm | SpO2 86.0%
+   - Lead-II ECG Morphology : Ventricular Ectopy / Prolonged QRS (QRS: 119ms, ST: -0.01mV)
+   - Generative VAE Anomaly : Reconstruction Error = 5.41
 
-3. MULTIMODAL LLM SECOND OPINION & QA CROSS-CHECK:
-   - LLM Diagnostic Read     : HIGH RISK
-   - QA Concordance Status   : [PASSED] CONCORDANT: DL Model (99.2%) aligns with LLM assessment (HIGH).
-   - Clinical Reasoning      : Marked tachycardia/hypoxia and elevated cardiac neural risk probability observed.
+[A - ASSESSMENT]
+   - Primary Risk Driver    : Clinical Metadata (66.0% gating weight)
+   - Modality Breakdown     : ECG 8.0% | Vitals 11.4% | VAE 14.7% | History 66.0%
+   - Top Clinical Biomarkers: Fluoroscopy Vessels (23.3%), Thalassemia (15.3%), Exercise Angina (13.3%)
+   - LLM Second Opinion QA  : HIGH RISK [DISCREPANT]
+   - QA Clinical Rationale  : Marked tachycardia/hypoxia, wide-complex arrhythmia, and elevated neural risk observed.
 
-4. RECOMMENDED CLINICAL INTERVENTIONS:
-   [ACTION REQUIRED] Immediate bedside assessment by ICU intensivist.
-   - Obtain STAT 12-lead ECG and serum Troponin / Cardiac Biomarkers.
-   - Verify arterial line blood pressure and oxygen delivery titration.
-   - Prepare antiarrhythmic / vasopressor support as clinically indicated.
+[R - RECOMMENDATION & BEDSIDE ORDERS]
+   [ROUTINE PROTOCOL - HEMODYNAMICALLY STABLE]
+   1. Continue standard ICU telemetry monitoring protocol (q1h vitals logging).
+   2. Maintain current maintenance IV fluids and supportive care.
+   3. Patient parameters comfortably within homeostatic boundaries.
+
+   [CLINICAL CONTRAINDICATIONS & SAFETY ALERTS]
+   * Assess for tachyarrhythmia/septic drive; avoid inotropes if cardiac ischemia suspected.
+   * Initiate immediate high-flow oxygen; avoid respiratory-depressing sedatives.
 
 ======================================================================
-Report generated autonomously by AutoGen Clinical Multi-Agent Workflow.
+Attestation: AutoGen Clinical Multi-Agent Framework | CardioSense AI
+Attending Co-Pilot ID: MD-ICU-8821 | Verified at: 2026-10-27 22:02:17 UTC
 ======================================================================

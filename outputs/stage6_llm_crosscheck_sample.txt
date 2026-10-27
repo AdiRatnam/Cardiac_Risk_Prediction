@@ -1,18 +1,18 @@
 PATIENT ICU CLINICAL SUMMARY:
 -----------------------------
 Demographics & History:
-  - Age: 62.0 years
+  - Age: 44.0 years
   - BMI: N/A
-  - Resting Systolic BP: 128 mmHg
-  - Total Cholesterol: 208 mg/dL
-  - Peak Heart Rate: 140 bpm
+  - Resting Systolic BP: 108 mmHg
+  - Total Cholesterol: 141 mg/dL
+  - Peak Heart Rate: 175 bpm
 
 ICU 24-Hour Continuous Vital Trends:
-  - Heart Rate Range: 91.0 - 155.0 bpm (Mean: 122.6 bpm)
-  - SpO2 Range: 95.0% - 100.0% (Mean: 96.8%)
-  - Trend Trajectory: Deteriorating (Tachycardia / Hypoxia)
+  - Heart Rate Range: 73.7 - 78.5 bpm (Mean: 76.1 bpm)
+  - SpO2 Range: 96.7% - 100.0% (Mean: 97.3%)
+  - Trend Trajectory: Stable baseline
 
 
-Deep Learning Risk Score : 1.86%
-Concordance Verification : CONCORDANT: DL Model (1.9%) aligns with LLM assessment (LOW).
-ECG Base64 String Length : 39060 characters
+Deep Learning Risk Score : 36.66%
+Concordance Verification : DISCREPANCY FLAGGED: DL Model predicted 36.7% risk, but LLM assessed clinical risk as 'LOW'. Human clinician review advised.
+ECG Base64 String Length : 43200 characters

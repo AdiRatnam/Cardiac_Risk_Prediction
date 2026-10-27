@@ -1,4 +1,4 @@
 Modality_Branch,Val_AUC,Accuracy
-Clinical Metadata Alone (Branch 1),0.8626,83.6%
-ECG Waveform Alone (Branch 2),0.6297,63.9%
-Multi-Modal Late Fusion (All Branches),0.9077,82.0%
+Clinical Metadata Alone (Branch 1),0.766,72.1%
+ECG Waveform Alone (Branch 2),0.8549,86.9%
+Multi-Modal Late Fusion (All Branches),0.9574,93.4%
