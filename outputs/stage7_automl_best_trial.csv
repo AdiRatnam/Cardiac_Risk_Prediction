@@ -1,0 +1,7 @@
+Parameter,Optimal_Value
+lr,0.0017643967683381545
+dropout_rate,0.2
+hidden_dim_1,128.0
+hidden_dim_2,64.0
+weight_decay,0.00026100256506134784
+Best_Validation_AUC,0.9643

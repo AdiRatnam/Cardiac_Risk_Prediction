@@ -1,0 +1,3 @@
+Model,Best_Val_AUC,Final_Val_Loss
+BaselineMLP (No Init/BN/Dropout),0.9697,0.3039
+ClinicalMLP (He-Init + BN + Dropout 0.3),0.961,0.3199

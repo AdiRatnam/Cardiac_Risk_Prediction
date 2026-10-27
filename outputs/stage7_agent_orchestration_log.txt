@@ -1,0 +1,69 @@
+AUTOGEN MULTI-AGENT CLINICAL DECISION SUPPORT ORCHESTRATION LOG
+=================================================================
+
+[CASE 1: STABLE ICU PATIENT]
+======================================================================
+          ICU CLINICAL DECISION SUPPORT: MULTI-AGENT HANDOFF NOTE      
+======================================================================
+
+1. PATIENT STATUS & RISK STRATIFICATION:
+   - Predicted Acute Cardiac Deterioration Risk: 88.1%
+   - Triage Category: [CRITICAL / HIGH RISK]
+   - Pipeline Status: VALIDATED
+
+2. MODALITY EXPLAINABILITY (ATTENTION DRIVERS):
+   - Primary Risk Driver     : VAE Anomaly Latent (37.5%)
+   - ECG Morphology Weight   : 34.2%
+   - Longitudinal Vitals     : 17.1%
+   - VAE Anomaly Score       : 37.5% (Recon Error: 0.03)
+   - Baseline Health History : 11.1%
+
+3. MULTIMODAL LLM SECOND OPINION & QA CROSS-CHECK:
+   - LLM Diagnostic Read     : HIGH RISK
+   - QA Concordance Status   : [PASSED] CONCORDANT: DL Model (88.1%) aligns with LLM assessment (HIGH).
+   - Clinical Reasoning      : Marked tachycardia/hypoxia and elevated cardiac neural risk probability observed.
+
+4. RECOMMENDED CLINICAL INTERVENTIONS:
+   [ACTION REQUIRED] Immediate bedside assessment by ICU intensivist.
+   - Obtain STAT 12-lead ECG and serum Troponin / Cardiac Biomarkers.
+   - Verify arterial line blood pressure and oxygen delivery titration.
+   - Prepare antiarrhythmic / vasopressor support as clinically indicated.
+
+======================================================================
+Report generated autonomously by AutoGen Clinical Multi-Agent Workflow.
+======================================================================
+
+
+======================================================================
+
+[CASE 2: ACUTE CRITICAL CARDIAC DETERIORATION]
+======================================================================
+          ICU CLINICAL DECISION SUPPORT: MULTI-AGENT HANDOFF NOTE      
+======================================================================
+
+1. PATIENT STATUS & RISK STRATIFICATION:
+   - Predicted Acute Cardiac Deterioration Risk: 99.2%
+   - Triage Category: [CRITICAL / HIGH RISK]
+   - Pipeline Status: VALIDATED
+
+2. MODALITY EXPLAINABILITY (ATTENTION DRIVERS):
+   - Primary Risk Driver     : VAE Anomaly Latent (34.7%)
+   - ECG Morphology Weight   : 23.5%
+   - Longitudinal Vitals     : 34.5%
+   - VAE Anomaly Score       : 34.7% (Recon Error: 6.87)
+   - Baseline Health History : 7.3%
+
+3. MULTIMODAL LLM SECOND OPINION & QA CROSS-CHECK:
+   - LLM Diagnostic Read     : HIGH RISK
+   - QA Concordance Status   : [PASSED] CONCORDANT: DL Model (99.2%) aligns with LLM assessment (HIGH).
+   - Clinical Reasoning      : Marked tachycardia/hypoxia and elevated cardiac neural risk probability observed.
+
+4. RECOMMENDED CLINICAL INTERVENTIONS:
+   [ACTION REQUIRED] Immediate bedside assessment by ICU intensivist.
+   - Obtain STAT 12-lead ECG and serum Troponin / Cardiac Biomarkers.
+   - Verify arterial line blood pressure and oxygen delivery titration.
+   - Prepare antiarrhythmic / vasopressor support as clinically indicated.
+
+======================================================================
+Report generated autonomously by AutoGen Clinical Multi-Agent Workflow.
+======================================================================
