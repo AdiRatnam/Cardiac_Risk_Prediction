@@ -244,8 +244,8 @@ Cardiac_Risk_Prediction/
 
 ### Step 1: Clone the Repository & Install Dependencies
 ```bash
-git clone https://github.com/Anubhav225/Cardiac_Risk_Prediction.git
-cd Cardiac_Risk_Prediction
+git clone https://github.com/Anubhav225/cardiac_risk_prediction.git
+cd cardiac_risk_prediction
 pip install -r requirements.txt
 ```
 
