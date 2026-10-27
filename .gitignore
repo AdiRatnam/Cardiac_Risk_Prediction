@@ -1,0 +1,73 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ==========================================
+# Environments & Virtual Envs
+# ==========================================
+.env
+.env.*
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Security, API Keys & Secret Credentials
+# ==========================================
+*.key
+*.pem
+*.cert
+*.pfx
+*.p12
+*secret*
+*credential*
+*token*
+*.env
+client_secret*.json
+service_account*.json
+credentials.json
+id_rsa*
+
+# ==========================================
+# Large Raw Datasets & Databases
+# ==========================================
+# (Preserve small UCI Cleveland CSV, ignore large MIMIC dumps > 25MB)
+mimic-iii*
+mimic-iv*
+*.tar
+*.gz
+*.zip
+*.7z
+*.rar
+
+# Cache & Temporary Files
+*.log
+*.tmp
+outputs/fontlist*.json
+.cache/
+.pytest_cache/
+
+# ==========================================
+# Jupyter Notebook Checkpoints
+# ==========================================
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ==========================================
+# IDE & OS Specific
+# ==========================================
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
